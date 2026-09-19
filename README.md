@@ -59,11 +59,11 @@ npm run build
 npm run preview
 ```
 
-#### 3. Deploying to Cloud Run / Vercel / Netlify / GitHub Pages
+#### 3. Deploying to Vercel / Cloud Run / Netlify
 - **Output Directory**: `dist`
-- **Build Command**: `npm run build`
-- **Node Version**: 18+ (tested on Node 20 / 22)
-- All navigation uses client-side hash routing (`#home`, `#about`, `#services`, etc.), making it 100% compatible with static file hosts and CDN edge networks without requiring custom redirect rewrites.
+- **Build Command**: `vite build`
+- **Install Command**: `npm install` (configured with `.npmrc` to use `legacy-peer-deps=true`)
+- Pre-configured `vercel.json` and `.npmrc` ensure smooth deployment and SPA route rewrites.
 
 ---
 
